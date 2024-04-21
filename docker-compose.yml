@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: 
+      context: ./bot
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres_master
+    volumes:
+      -db_data:/var/lib/postgresql/data
+    
+  postgres_master:
+    build:
+      context: db
+      dockerfile: Dockerfile
+    ports:
+      - 5432:5432
+
+  postgres_slave:
+    build:
+      context: db_repl
+      dockerfile: Dockerfile
+    user: postgres
+    ports:
+      - 5433:5432
+    command: |
+      bash -c "
+      until pg_basebackup --pgdata=/var/lib/postgresql/data --host=postgres_master --port=5432 -U replica_user -P
+      do
+      echo 'Waiting for primary to connect...'
+      sleep 2s
+      done
+      echo 'Backup done, starting replica...'
+      chmod 0700 /var/lib/postgresql/data
+      postgres
+      "
+    depends_on:
+      - postgres_master
+    volumes:
+      -db_replica:/var/lib/postgresql/data
+volumes:
+  db_data: {}
+  db_replica: {}

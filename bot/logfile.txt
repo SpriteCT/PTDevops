@@ -1,0 +1,692 @@
+2024-04-07 18:09:09,185 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:09:56,952 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:09:56,952 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:22:22,154 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:22:42,011 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 27, in findPhoneNumbersCommand
+    update.message.reply_text('Введите текст для поиска телефонных номеров: ')
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+2024-04-07 18:23:49,381 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:23:49,382 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:23:52,668 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:24:30,178 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:24:30,178 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:25:14,888 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:25:24,353 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:25:24,354 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:26:17,792 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:27:03,300 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:27:03,301 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:27:24,634 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:27:34,274 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:27:34,274 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:30:37,693 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:31:05,042 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:31:05,042 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:31:46,325 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:32:19,834 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:32:19,834 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:41:06,763 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:41:34,454 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 78, in verifyPasswordCommand
+    update.message.reply_text('Введите пароль на проверку: ')
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+2024-04-07 18:41:38,923 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:41:38,924 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:41:45,314 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:42:12,146 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:42:12,146 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:52:13,094 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 18:52:13,199 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 18:52:13,200 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:52:40,501 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:52:40,501 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 18:55:36,373 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 18:55:39,985 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 18:55:40,094 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 18:55:43,250 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 18:55:43,352 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 18:55:46,301 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 18:55:46,301 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:06:24,206 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:06:37,254 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:06:37,368 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:06:50,356 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:06:50,461 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:06:59,139 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:06:59,139 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:24:58,020 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:25:07,736 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:25:07,902 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:25:09,537 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:25:09,645 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:25:15,989 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:25:16,094 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:26:36,413 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:26:36,423 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:26:42,302 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:30:07,460 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:30:07,464 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:30:10,234 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:31:27,386 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:31:27,502 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:32:49,969 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:32:50,072 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:32:56,035 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:32:56,136 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:32:59,030 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:32:59,134 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:02,842 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:02,947 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:07,899 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:08,003 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:11,632 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:11,738 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:14,860 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:14,964 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:18,261 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:18,365 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:22,247 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:22,404 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:27,324 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:27,429 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:36,933 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:37,038 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:37,890 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 186, in getSs
+    update.message.reply_text(execCommand('ss'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 19:33:47,829 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:47,935 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:48,685 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 186, in getSs
+    update.message.reply_text(execCommand('ss'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 19:33:51,987 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:52,091 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:58,501 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:33:58,604 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:33:59,809 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 192, in getAptList
+    update.message.reply_text(execCommand('apt list --installed'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 19:34:06,258 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:34:06,361 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:34:50,534 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:34:50,539 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:34:58,898 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:35:29,470 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:35:29,584 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:35:32,665 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:35:32,771 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:35:33,937 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 192, in getAptList
+    update.message.reply_text(execCommand('apt list --installed'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 19:35:47,762 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:35:47,869 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:35:48,520 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 186, in getSs
+    update.message.reply_text(execCommand('ss'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 19:35:54,073 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:35:54,177 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:36:35,772 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:36:35,772 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:36:43,825 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:37:06,592 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:37:06,593 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:37:09,957 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:38:36,748 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:38:36,759 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:38:39,288 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:39:27,923 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:39:27,923 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:39:30,189 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:40:13,186 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:40:13,186 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:40:17,381 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:40:59,625 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:40:59,625 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:41:43,253 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:42:11,411 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:42:11,411 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:42:49,556 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:43:00,455 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:43:00,456 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:43:24,200 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:45:24,909 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:25,072 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:28,070 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:28,172 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:31,490 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:31,592 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:34,968 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:35,123 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:38,247 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:38,348 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:41,885 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:41,988 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:46,159 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:46,314 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:49,757 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:49,859 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:53,109 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:53,211 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:45:57,088 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:45:57,191 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:46:05,487 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:46:05,591 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:46:06,342 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 182, in getSs
+    update.message.reply_text(execCommand('ss'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 19:46:14,037 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:46:14,138 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:46:15,192 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 188, in getAptList
+    update.message.reply_text(execCommand('apt list --installed'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 19:46:18,315 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 19:46:18,419 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 19:47:22,948 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:47:22,954 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 19:52:14,804 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 19:54:53,373 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 19:54:53,378 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 20:12:26,762 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 20:12:30,569 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 20:12:30,569 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 20:31:02,508 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 20:41:05,524 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:05,812 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:06,961 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:07,065 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:08,405 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:08,660 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:10,730 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:10,840 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:13,538 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:13,642 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:16,260 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:16,364 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:19,522 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:19,629 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:36,345 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:36,449 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:39,216 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:39,319 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:43,632 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:43,786 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:48,163 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:41:48,268 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:41:49,791 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 182, in getSs
+    update.message.reply_text(execCommand('ss'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 20:42:20,187 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:42:20,291 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:42:26,070 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 390, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 1043, in _send_output
+    self.send(chunk)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 965, in send
+    self.sock.sendall(data)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+socket.timeout: The write operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 390, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 1043, in _send_output
+    self.send(chunk)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\http\client.py", line 965, in send
+    self.sock.sendall(data)
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "C:\Users\weqae\AppData\Local\Programs\Python\Python38\lib\ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', timeout('The write operation timed out'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 188, in getAptList
+    update.message.reply_text(execCommand('apt list --installed'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', timeout('The write operation timed out'))
+2024-04-07 20:42:26,198 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:42:26,303 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:42:52,525 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:42:52,627 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:42:54,261 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 188, in getAptList
+    update.message.reply_text(execCommand('apt list --installed'))
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\extbot.py", line 199, in _message
+    result = super()._message(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\bot.py", line 295, in _post
+    return self.request.post(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 356, in post
+    result = self._request_wrapper(
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\utils\request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-04-07 20:43:31,061 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 20:43:31,069 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-07 20:43:42,752 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-07 20:43:48,935 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:43:49,039 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:43:50,986 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:43:51,087 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:44:38,007 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:44:38,162 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:44:41,071 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:44:41,176 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:44:42,699 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-07 20:44:42,854 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-07 20:45:31,269 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-07 20:45:31,269 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:28:40,562 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:29:18,168 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 191, in getReplLogs
+    update.message.reply_text(execCommand('cat /var/log/postgresql/postgresql-14-main.log'))
+  File "C:\Users\weqae\Desktop\devops\main.py", line 147, in execCommand
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\paramiko\client.py", line 386, in connect
+    sock.connect(addr)
+TimeoutError: [WinError 10060] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+2024-04-14 23:29:27,483 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:29:27,515 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:29:37,590 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:30:07,411 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 191, in getReplLogs
+    update.message.reply_text(execCommand('cat /var/log/postgresql/postgresql-14-main.log'))
+  File "C:\Users\weqae\Desktop\devops\main.py", line 147, in execCommand
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\paramiko\client.py", line 386, in connect
+    sock.connect(addr)
+TimeoutError: [WinError 10060] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+2024-04-14 23:30:53,582 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:30:53,604 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:30:53,883 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 188, in getAptList
+    update.message.reply_text(execCommand('apt list --installed'))
+  File "C:\Users\weqae\Desktop\devops\main.py", line 147, in execCommand
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\paramiko\client.py", line 386, in connect
+    sock.connect(addr)
+TimeoutError: [WinError 10060] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+2024-04-14 23:31:01,996 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:31:07,661 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 191, in getReplLogs
+    update.message.reply_text(execCommand('cat /var/log/postgresql/postgresql-14-main.log'))
+  File "C:\Users\weqae\Desktop\devops\main.py", line 147, in execCommand
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\paramiko\client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.48.137
+2024-04-14 23:31:11,874 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:31:11,874 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:34:17,244 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:34:33,024 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 188, in getAptList
+    update.message.reply_text(execCommand('apt list --installed'))
+  File "C:\Users\weqae\Desktop\devops\main.py", line 147, in execCommand
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\paramiko\client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.48.137
+2024-04-14 23:36:10,910 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:36:10,927 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:36:20,432 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:36:20,912 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-14 23:36:21,133 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-14 23:36:30,102 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2024-04-14 23:36:30,327 - paramiko.transport - INFO - Authentication (password) successful!
+2024-04-14 23:36:40,027 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:36:40,033 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:44:53,419 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:45:03,536 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 210, in getEmails
+    if connection:
+UnboundLocalError: local variable 'connection' referenced before assignment
+2024-04-14 23:45:26,816 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:45:26,827 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:46:39,278 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:46:48,474 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\weqae\Desktop\devops\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "C:\Users\weqae\Desktop\devops\main.py", line 210, in getEmails
+    if connection:
+UnboundLocalError: local variable 'connection' referenced before assignment
+2024-04-14 23:48:04,923 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:48:04,952 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:48:11,237 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:48:12,825 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:48:12,826 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:48:22,617 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:48:34,496 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:48:34,506 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:49:13,477 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:49:22,427 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:49:22,427 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:49:44,991 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:49:57,789 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:49:57,796 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:50:19,100 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:50:33,034 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:50:33,047 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:50:44,493 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:51:49,107 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:51:49,133 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:51:56,247 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:52:12,349 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:52:12,351 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-14 23:53:48,013 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-14 23:54:45,477 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-14 23:54:45,485 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-15 00:06:37,216 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-15 00:08:00,639 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-15 00:08:00,654 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-15 00:16:30,036 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-15 00:17:01,179 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-15 00:17:01,187 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-15 00:17:27,680 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-15 00:17:45,583 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-15 00:17:45,584 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-15 00:20:17,619 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-15 00:23:41,140 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-15 00:23:41,168 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-15 00:23:49,840 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-15 00:24:11,759 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-15 00:24:11,786 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-15 00:25:08,829 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-15 00:25:28,125 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-15 00:25:28,125 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-04-15 00:25:34,843 - apscheduler.scheduler - INFO - Scheduler started
+2024-04-15 00:32:51,653 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-04-15 00:32:51,666 - apscheduler.scheduler - INFO - Scheduler has been shut down
