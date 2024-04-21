@@ -8,11 +8,6 @@ RUN echo 'postgres:password' | chpasswd
 RUN echo 'root:root123' | chpasswd
 RUN echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
 
-ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=password
-ENV POSTGRES_DB=db
-
-
 COPY postgresql.conf /tmp/postgresql.conf
 COPY pg_hba.conf /tmp/pg_hba.conf
 

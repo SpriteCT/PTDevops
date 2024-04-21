@@ -7,26 +7,42 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - postgres_master
-    volumes:
-      -db_data:/var/lib/postgresql/data
+    environment:
+      - TOKEN=${TOKEN}
+      - RM_HOST=${RM_HOST}
+      - RM_PORT=${RM_PORT}
+      - RM_USER=${RM_USER}
+      - RM_PASSWORD=${RM_PASSWORD}
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_PORT=${DB_PORT}
+      - DB_HOST=${DB_HOST}
     
   postgres_master:
     build:
       context: db
       dockerfile: Dockerfile
     ports:
-      - 5432:5432
+      - 5432:${DB_PORT}
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_DATABASE} 
 
   postgres_slave:
     build:
       context: db_repl
       dockerfile: Dockerfile
-    user: postgres
+    user: ${DB_USER}
     ports:
-      - 5433:5432
+      - 5433:${DB_REPL_PORT}
+    environment:
+      - POSTGRES_USER=${DB_REPL_USER}
+      - POSTGRES_PASSWORD=${DB_REPL_PASSWORD}
     command: |
       bash -c "
-      until pg_basebackup --pgdata=/var/lib/postgresql/data --host=postgres_master --port=5432 -U replica_user -P
+      until pg_basebackup --pgdata=/var/lib/postgresql/data --host=${DB_HOST} --port=${DB_PORT} -U ${DB_REPL_USER} -P
       do
       echo 'Waiting for primary to connect...'
       sleep 2s
@@ -37,8 +53,7 @@ services:
       "
     depends_on:
       - postgres_master
-    volumes:
-      -db_replica:/var/lib/postgresql/data
+
 volumes:
   db_data: {}
   db_replica: {}

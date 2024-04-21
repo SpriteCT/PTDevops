@@ -2,16 +2,24 @@ import logging
 import re
 import paramiko
 import psycopg2
+import os
 
 from psycopg2 import Error
 from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler
 
-TOKEN = "7170070211:AAGUI7UGZD-_MlG_gVa5fpei81el3idtmzY"
-host = 'postgres_master'
-port = 22
-username = 'root'
-password = 'root123'
+TOKEN = os.environ["TOKEN"]
+host = os.environ["RM_HOST"]
+port = os.environ["RM_PORT"]
+username = os.environ["RM_USER"]
+password = os.environ["RM_PASSWORD"]
+
+db_name = os.environ["DB_DATABASE"]
+db_user = os.environ["DB_USER"]
+db_password =os.environ["DB_PASSWORD"]
+db_port = os.environ["DB_PORT"]
+db_host = os.environ["DB_HOST"]
+
 Emails = []
 Phones = []
 
@@ -56,11 +64,11 @@ def addPhoneNumbers(update: Update, context):
         return ConversationHandler.END
     elif 'Да' in user_input:
         try:
-            connection = psycopg2.connect(user="postgres",
-                                          password="password",
-                                          host=host,
-                                          port="5432",
-                                          database="db")
+            connection = psycopg2.connect(user=db_user,
+                                          password=db_password,
+                                          host=db_host,
+                                          port=db_port,
+                                          database=db_name)
 
             cursor = connection.cursor()
             for i in context.chat_data['phones']:
@@ -110,11 +118,11 @@ def addEmail(update: Update, context):
         return ConversationHandler.END
     elif 'Да' in user_input:
         try:
-            connection = psycopg2.connect(user="postgres",
-                                          password="password",
-                                          host=host,
-                                          port="5432",
-                                          database="db")
+            connection = psycopg2.connect(user=db_user,
+                                          password=db_password,
+                                          host=db_host,
+                                          port=db_port,
+                                          database=db_name)
 
             cursor = connection.cursor()
             for i in context.chat_data['emails']:
@@ -262,11 +270,11 @@ def getReplLogs(update: Update, context):
 
 def getEmails(update: Update, context):
     try:
-        connection = psycopg2.connect(user="postgres",
-                                      password="password",
-                                      host=host,
-                                      port="5432",
-                                      database="db")
+        connection = psycopg2.connect(user=db_user,
+                                          password=db_password,
+                                          host=db_host,
+                                          port=db_port,
+                                          database=db_name)
 
         cursor = connection.cursor()
         cursor.execute("SELECT * FROM emails")
@@ -284,11 +292,11 @@ def getEmails(update: Update, context):
             print("Соединение с PostgreSQL закрыто")
 def getPhones(update: Update, context):
     try:
-        connection = psycopg2.connect(user="postgres",
-                                      password="password",
-                                      host=host,
-                                      port="5432",
-                                      database="db")
+        connection = psycopg2.connect(user=db_user,
+                                          password=db_password,
+                                          host=db_host,
+                                          port=db_port,
+                                          database=db_name)
 
         cursor = connection.cursor()
         cursor.execute("SELECT * FROM phones")

@@ -2,8 +2,5 @@ FROM postgres:latest
 
 WORKDIR /app
 
-ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=password
-
 EXPOSE 5432
 
