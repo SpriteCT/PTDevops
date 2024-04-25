@@ -266,7 +266,13 @@ def getAptList(update: Update, context):
     update.message.reply_text(execCommand('apt list --installed'))
 
 def getReplLogs(update: Update, context):
-    update.message.reply_text(execCommand('cat /var/lib/postgresql/data/log/main.log | grep replic'))
+    with paramiko.SSHClient() as client:
+        client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        client.connect(hostname=db_host, username='root', password='root123', port=port)
+        stdin, stdout, stderr = client.exec_command("cat /var/lib/postgresql/data/log/main.log | grep replic")
+        data = stdout.read() + stderr.read()
+        data = str(data).replace('\\n', '\n').replace('\\t', '\t')[2:-1]
+        update.message.reply_text(data)
 
 def getEmails(update: Update, context):
     try:
