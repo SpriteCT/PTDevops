@@ -1,0 +1,28 @@
+---
+- hosts: master
+  name: Install telegram bot
+
+  tasks:
+    - name: Set enviroments vars
+      lineinfile:
+        path: "/etc/environment"
+        state: present
+        line: "{{ item }}"
+      with_items:
+        - "TOKEN={{ hostvars['master-server'].TOKEN }}"
+        - "RM_HOST={{ hostvars['master-server'].ansible_host }}"
+        - "RM_PORT={{ hostvars['master-server'].RM_PORT }}"
+        - "RM_USER={{ hostvars['master-server'].RM_USER }}"
+        - "RM_PASSWORD={{ hostvars['master-server'].RM_PASSWORD }}"
+        - "DB_DATABASE={{ hostvars['master-server'].DB_DATABASE }}"
+        - "DB_USER={{ hostvars['master-server'].DB_USER }}"
+        - "DB_PASSWORD={{ hostvars['master-server'].DB_PASSWORD }}"
+        - "DB_PORT={{ hostvars['master-server'].DB_PORT }}"
+        - "DB_HOST={{ hostvars['master-server'].ansible_host }}"
+    - name: Clone bot from git
+      ansible.builtin.git:
+        repo: https://github.com/SpriteCT/PTDevops
+        dest: /src/app
+        single_branch: yes
+        version: ansible
+...

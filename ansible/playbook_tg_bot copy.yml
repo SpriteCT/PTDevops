@@ -1,0 +1,135 @@
+---
+- hosts: all
+  name: Preparing servers
+  remote_user: root
+
+  tasks:
+    - name: Install postgresql
+      ansible.builtin.apt:
+        name: postgresql
+        state: present
+
+    - name: Install pip
+      ansible.builtin.apt:
+        name: python3-pip
+        state: present
+  
+    - name: Install Python packages for postgres modules
+      pip: 
+        name: psycopg2-binary
+        state: present
+      
+    - name: Start postgresql
+      ansible.builtin.service:
+        name: postgresql
+        enabled: yes
+        state: started
+
+- hosts: master
+  name: Setting master
+  tasks:
+
+    - name: Create database
+      become: yes
+      become_user: '{{DB_USER}}'
+      community.postgresql.postgresql_db:
+        name: '{{DB_DATABASE}}'
+
+    - name: Create Email table
+      become: yes  
+      become_user: '{{DB_USER}}'
+      community.postgresql.postgresql_table:
+        db: '{{DB_DATABASE}}'
+        owner: '{{DB_USER}}'
+        name: Emails
+        columns:
+        - EmailID serial PRIMARY KEY
+        - Email VARCHAR(255)
+
+    - name: Create Phones table
+      become: yes
+      become_user: '{{DB_USER}}'
+      community.postgresql.postgresql_table:
+        db: '{{DB_DATABASE}}'
+        owner: '{{DB_USER}}'
+        name: Phones
+        columns:
+        - PhonesID serial PRIMARY KEY
+        - Phone VARCHAR(255)
+
+    - name: Create replica user
+      become: yes
+      become_user: '{{DB_USER}}'
+      community.postgresql.postgresql_user:
+        db: '{{DB_DATABASE}}'
+        name: '{{DB_REPL_USER}}'
+        password: '{{DB_REPL_PASSWORD}}'
+        role_attr_flags: REPLICATION
+  
+    - name: Copy conf file
+      become: yes
+      become_user: '{{DB_USER}}'
+      ansible.builtin.copy:
+        src: postgresql.conf
+        dest: /etc/postgresql/14/main/postgresql.conf
+      notify: restart postgres
+
+    - name: Grant user replication to pg_hba
+      become: yes
+      become_user: '{{DB_USER}}'
+      postgresql_pg_hba:
+        dest: /etc/postgresql/14/main/pg_hba.conf
+        contype: host
+        users: '{{DB_REPL_USER}}'
+        source: 0.0.0.0/0
+        databases: replication
+        method: trust
+      notify: restart postgres
+
+  handlers:
+    - name: restart postgres
+      service: name=postgresql state=restarted
+
+- hosts: slave
+  name: Replicate from master
+  tasks:
+    - name: Stop postgres server
+      ansible.builtin.service:
+        name: postgresql
+        state: stopped
+
+    - name: Backup initial data from master
+      ansible.builtin.shell: pg_basebackup --pgdata=/var/lib/postgresql/data --host={{ hostvars['master-server'].ansible_host }} --port={{DB_PORT}} -U {{DB_REPL_USER}} -P
+
+    - name: Start postgresql
+      ansible.builtin.service:
+        name: postgresql
+        state: started
+
+- hosts: master
+  name: Install telegram bot
+
+  tasks:
+    - name: Set enviroments vars
+      lineinfile:
+        path: "/etc/environment"
+        state: present
+        line: "{{ item }}"
+      with_items:
+        - "TOKEN={{ hostvars['master-server'].TOKEN }}"
+        - "RM_HOST={{ hostvars['master-server'].ansible_host }}"
+        - "RM_PORT={{ hostvars['master-server'].RM_PORT }}"
+        - "RM_USER={{ hostvars['master-server'].RM_USER }}"
+        - "RM_PASSWORD={{ hostvars['master-server'].RM_PASSWORD }}"
+        - "DB_DATABASE={{ hostvars['master-server'].DB_DATABASE }}"
+        - "DB_USER={{ hostvars['master-server'].DB_USER }}"
+        - "DB_PASSWORD={{ hostvars['master-server'].DB_PASSWORD }}"
+        - "DB_PORT={{ hostvars['master-server'].DB_PORT }}"
+        - "DB_HOST={{ hostvars['master-server'].ansible_host }}"
+    - name: Clone bot from git
+      ansible.builtin.git:
+        repo: https://github.com/SpriteCT/PTDevops
+        dest: /src/app
+        single_branch: yes
+        version: ansible
+...
