@@ -266,7 +266,7 @@ def getAptList(update: Update, context):
     update.message.reply_text(execCommand('apt list --installed'))
 
 def getReplLogs(update: Update, context):
-    update.message.reply_text(execCommand("cat /var/lib/postgresql/data/log/main.log | grep replic"))
+    update.message.reply_text(execCommand("cat /var/lib/postgresql/14/main/log/main.log | grep replic"))
 
 def getEmails(update: Update, context):
     try:
