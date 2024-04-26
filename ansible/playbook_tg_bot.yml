@@ -143,6 +143,8 @@
         
     - name: Run Bot
       shell: "(cd /src/app/bot; nohup python3 bot.py >/dev/null 2>&1 &)"
-      async: 10
-      poll: 0
+      register: outshell
+      
+    - name: Check
+      debug: var=outshell
 ...

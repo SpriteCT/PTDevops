@@ -248,7 +248,7 @@ def getW(update: Update, context):
     update.message.reply_text(execCommand('w'))
 
 def getAuths(update: Update, context):
-    update.message.reply_text(execCommand('last | head -10'))
+    update.message.reply_text(execCommand('cat /var/log/auth.log'))
 
 def getCritical(update: Update, context):
     update.message.reply_text(execCommand('grep Critical -i /var/log/syslog | head -5'))
