@@ -142,7 +142,7 @@
         requirements: /src/app/bot/requirements.txt
         
     - name: Run Bot
-      shell: "(cd /src/app/bot; python3 bot.py >/dev/null 2>&1 &)"
+      shell: "(cd /src/app/bot; nohup python3 bot.py >/dev/null 2>&1 &)"
       async: 10
       poll: 0
 ...
