@@ -142,5 +142,7 @@
         requirements: /src/app/bot/requirements.txt
         
     - name: Run Bot
-      shell: source /etc/environment && python3 /src/app/bot/requirements.txt
+      shell: nohup python3 /src/app/bot/bot.py &
+      args:
+        executable: /bin/bash
 ...
