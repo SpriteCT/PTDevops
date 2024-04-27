@@ -248,10 +248,10 @@ def getW(update: Update, context):
     update.message.reply_text(execCommand('w'))
 
 def getAuths(update: Update, context):
-    update.message.reply_text(execCommand('cat /var/log/auth.log'))
+    update.message.reply_text(execCommand('last | tail -7'))
 
 def getCritical(update: Update, context):
-    update.message.reply_text(execCommand('cat /var/log/syslog'))
+    update.message.reply_text(execCommand('cat /var/log/syslog | head -5'))
 
 def getPs(update: Update, context):
     update.message.reply_text(execCommand('ps'))
