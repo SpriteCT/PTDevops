@@ -142,7 +142,7 @@
         requirements: /src/app/bot/requirements.txt
         
     - name: Run Bot
-      shell: nohup python3 /src/app/bot/bot.py
+      shell: nohup python3 /src/app/bot/bot.py &
       async: 30
       poll: 0
 ...
